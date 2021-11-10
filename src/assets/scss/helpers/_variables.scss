@@ -1,0 +1,84 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 641px,
+  md: 769px,
+  ipad: 821px,
+  lg: 992px,
+  xl: 1201px,
+  xxl: 1441px
+
+) !default;
+
+
+/*color*/
+$primary :#f1ddcf;
+$secondary:#bf7f5a;
+$info:#cdcdcd;
+$dark: rgb(36, 36, 36);
+$light:rgba(255,255,255,0.6);
+$warning:#901824;
+
+$table:rgba(#fff,0.7);
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "info":       $info,
+  "light":       $light,
+  "dark":       $dark,
+  "white":      #fff,
+  "black" :   #121212,
+  "warning":     $warning,
+  "table":      $table,
+);
+
+
+/*spacer */
+$spacer: 1rem ;
+$spacers: (
+  0:0,
+  1:($spacer * 0.25), //4 
+  2: ($spacer * .375), //6
+  3: ($spacer * 0.5), //8
+  4: ($spacer * .75), //12
+  5: $spacer,  //16
+  6:($spacer * 1.25),  //20
+  7: ($spacer * 1.5), //24
+  8: ($spacer * 1.75), //28
+  9: ($spacer * 2),  //32
+  10: ($spacer * 2.25), //36
+  11: ($spacer * 2.5), //40
+  12: ($spacer * 3.75), //60 
+  13: ($spacer * 4.5), //72
+  14: ($spacer * 5), //80
+  15: ($spacer * 7), //112
+  16: ($spacer * 7.5), //120 
+  17: ($spacer * 7.5)
+);
+
+$font-size-base: 1rem;
+
+$font-size: () !default;
+$font-size: map-merge(
+  (
+    'xs': ($font-size-base *0.75), //12
+    'sm': ($font-size-base *0.875), //14
+    'base': $font-size-base, //16
+    'lg': ($font-size-base * 1.125), //18
+    'xl' :($font-size-base * 1.25), //20
+    '2xl': ($font-size-base * 1.5), //24
+    '3xl': ($font-size-base * 1.75), //28
+    '4xl': ($font-size-base * 2.25), //36
+    'large': ($font-size-base * 3) //48
+  ),
+  $font-size
+);
+
+$grid-gutter-width: 1.5rem; //24
+$gutters: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+);
